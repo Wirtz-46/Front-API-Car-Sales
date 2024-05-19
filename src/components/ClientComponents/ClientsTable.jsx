@@ -1,21 +1,21 @@
 import ClientsRow from "./ClientsRow"
 
-function ClientsTable({clients, onEdit, onDelete}){
+function ClientsTable({client, onEdit, onDelete}){
     return(    
         <table>
             <thead>
-                <tr>
-                    <th>clients</th>
-                    <th>names</th>
-                    <th>emails</th>
-                    <th>phones</th>
-                    <th>address</th>
-                    <th>birtdates</th>
-                    <th>identification</th>                 
+                <tr>                  
+                    <th>NAMES</th>
+                    <th>EMAIL</th>
+                    <th>PHONE</th>
+                    <th>ADDRESS</th>
+                    <th>BIRTHDATE</th>
+                    <th>IDENTIFICATION</th>  
+                    <th>ACTIONS</th>               
                 </tr>
             </thead>
             <tbody>
-                {clients.map((client) => (
+                {client.map((client) => (
                     <ClientsRow key={client.clientId} client={client} onEdit={onEdit} onDelete={onDelete}/>
                 ))}
             </tbody>
