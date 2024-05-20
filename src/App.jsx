@@ -21,6 +21,10 @@ function App() {
     // Actualiza la lista de clientes por cada cliente nuevo
     useEffect(() => {
         fetchClients();
+    }, []);
+
+    // Actualiza la lista de carros por cada carro nuevo
+    useEffect(() => {
         fetchCars();
     }, []);
 

@@ -58,19 +58,4 @@ function ClientsForm({ onSubmit, initialClient }) {
     );
 }
 
-/*return(
-    <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Names" value={names} onChange={handleNamesChange} required />
-        <input type="email" placeholder="Email" value={email} onChange={handleEmailsChange} required />
-        <input type="text" placeholder="Phone" value={phone} onChange={handlePhonesChange} required />
-        <input type="text" placeholder="Address" value={address} onChange={handleAddressesChange} required />
-        <input type="password" placeholder="Password" value={password} onChange={handlePasswordsChange} required />
-        <input type="text" placeholder="Document" value={id_card} onChange={handleIdCardChange} required />
-        <button type="submit">Save</button>
-    </form>
-)
-
-}*/
-
-
 export default ClientsForm;
